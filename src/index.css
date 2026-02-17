@@ -1,0 +1,236 @@
+:root {
+  /* Luxury AI Palette */
+  --primary: #6C5CE7;
+  /* Deep Purple */
+  --primary-hover: #5A4FCF;
+  --secondary: #DFD3FF;
+  /* Soft Lavender */
+  --accent: #DFFF00;
+  /* Neon Yellow */
+
+  --bg-main: #F7F7F0;
+  /* Off-white */
+  --bg-card: #FFFFFF;
+  --bg-alt: #EBEBE6;
+  /* Slightly darker background for contrast */
+
+  --text-main: #2B2B28;
+  /* Charcoal */
+  --text-muted: #5A5A5A;
+  /* Graphite */
+  --text-light: #888888;
+
+  --border: rgba(0, 0, 0, 0.06);
+  --border-highlight: rgba(108, 92, 231, 0.2);
+
+  /* Typography */
+  --font-heading: 'Pontano Sans', sans-serif;
+  --font-body: 'Montserrat', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 32px;
+  --spacing-xl: 64px;
+  --spacing-xxl: 128px;
+
+  /* UI Tokens */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 12px 24px -6px rgba(0, 0, 0, 0.08);
+  /* Soft luxury shadow */
+  --shadow-lg: 0 24px 48px -12px rgba(108, 92, 231, 0.15);
+  /* Purple tint shadow */
+}
+
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  font-family: var(--font-heading);
+}
+
+/* Layout Utilities */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.section {
+  padding: var(--spacing-xxl) 0;
+  position: relative;
+}
+
+/* Typography Utilities */
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  color: var(--text-main);
+  font-weight: 400;
+  /* Modern, clean look */
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 4.5rem;
+  /* Massive hero text */
+}
+
+h2 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-lg);
+}
+
+h3 {
+  font-size: 1.75rem;
+  margin-bottom: var(--spacing-md);
+  font-weight: 600;
+}
+
+p {
+  color: var(--text-muted);
+  margin-bottom: var(--spacing-md);
+  font-size: 1.125rem;
+}
+
+/* Utility Classes */
+.text-gradient {
+  background: linear-gradient(135deg, var(--primary), #A29BFE);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.bg-glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 36px;
+  border-radius: 100px;
+  /* Pill shape */
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(108, 92, 231, 0.4);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--text-main);
+  border-color: var(--border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background-color: rgba(108, 92, 231, 0.05);
+}
+
+/* Cards */
+.card {
+  background: var(--bg-card);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--border-highlight);
+}
+
+/* Animation Utilities */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  :root {
+    --spacing-lg: 20px;
+    --spacing-xl: 40px;
+    --spacing-xxl: 80px;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
