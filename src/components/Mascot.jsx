@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const Mascot = ({ step }) => {
     const [showTooltip, setShowTooltip] = useState(false);
-    const [message, setMessage] = useState("Hi! I'm Yappy! 🐭");
+    const [message, setMessage] = useState("Hi! I'm EnglishMan! 🎩");
 
     // Don't show mascot during test
     if (step === 'test') return null;
