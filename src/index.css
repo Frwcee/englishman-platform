@@ -1,27 +1,27 @@
 :root {
-  /* Luxury AI Palette */
-  --primary: #6C5CE7;
-  /* Deep Purple */
-  --primary-hover: #5A4FCF;
-  --secondary: #DFD3FF;
-  /* Soft Lavender */
-  --accent: #DFFF00;
-  /* Neon Yellow */
+  /* EnglishMan Royal Palette */
+  --primary: #0D47A1;
+  /* Royal Navy Blue */
+  --primary-hover: #002171;
+  --secondary: #E3F2FD;
+  /* Soft Sky Blue */
+  --accent: #C62828;
+  /* Crimson Red */
 
   --bg-main: #F7F7F0;
   /* Off-white */
   --bg-card: #FFFFFF;
   --bg-alt: #EBEBE6;
-  /* Slightly darker background for contrast */
+  /* Slightly darker background */
 
-  --text-main: #2B2B28;
-  /* Charcoal */
-  --text-muted: #5A5A5A;
-  /* Graphite */
-  --text-light: #888888;
+  --text-main: #1A237E;
+  /* Deep Blue/Black */
+  --text-muted: #546E7A;
+  /* Blue Grey */
+  --text-light: #90A4AE;
 
   --border: rgba(0, 0, 0, 0.06);
-  --border-highlight: rgba(108, 92, 231, 0.2);
+  --border-highlight: rgba(13, 71, 161, 0.2);
 
   /* Typography */
   --font-heading: 'Pontano Sans', sans-serif;
@@ -44,8 +44,8 @@
   --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
   --shadow-md: 0 12px 24px -6px rgba(0, 0, 0, 0.08);
   /* Soft luxury shadow */
-  --shadow-lg: 0 24px 48px -12px rgba(108, 92, 231, 0.15);
-  /* Purple tint shadow */
+  --shadow-lg: 0 24px 48px -12px rgba(13, 71, 161, 0.15);
+  /* Blue tint shadow */
 }
 
 /* Reset & Base */
@@ -128,7 +128,7 @@ p {
 
 /* Utility Classes */
 .text-gradient {
-  background: linear-gradient(135deg, var(--primary), #A29BFE);
+  background: linear-gradient(135deg, var(--primary), #42A5F5);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -162,13 +162,13 @@ p {
 .btn-primary {
   background-color: var(--primary);
   color: #fff;
-  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.3);
+  box-shadow: 0 4px 15px rgba(13, 71, 161, 0.3);
 }
 
 .btn-primary:hover {
   background-color: var(--primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(108, 92, 231, 0.4);
+  box-shadow: 0 8px 25px rgba(13, 71, 161, 0.4);
 }
 
 .btn-secondary {
@@ -180,7 +180,7 @@ p {
 .btn-secondary:hover {
   border-color: var(--primary);
   color: var(--primary);
-  background-color: rgba(108, 92, 231, 0.05);
+  background-color: rgba(13, 71, 161, 0.05);
 }
 
 /* Cards */

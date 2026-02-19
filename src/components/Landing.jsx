@@ -50,7 +50,7 @@ const HeroSection = ({ onStart }) => (
                 <div style={{
                     display: 'inline-block',
                     padding: '8px 16px',
-                    background: 'rgba(108, 92, 231, 0.1)',
+                    background: 'rgba(13, 71, 161, 0.1)',
                     color: 'var(--primary)',
                     borderRadius: '100px',
                     fontSize: '0.9rem',
@@ -101,16 +101,16 @@ const HeroSection = ({ onStart }) => (
                     <div style={{
                         position: 'absolute',
                         inset: 0,
-                        background: 'radial-gradient(circle at 50% 50%, rgba(108, 92, 231, 0.05) 0%, transparent 60%)'
+                        background: 'radial-gradient(circle at 50% 50%, rgba(13, 71, 161, 0.05) 0%, transparent 60%)'
                     }} />
                     {/* Abstract Representation of AI Interface */}
                     <div style={{ textAlign: 'center' }}>
                         <div style={{
                             width: '120px', height: '120px',
-                            background: 'linear-gradient(135deg, var(--primary), #A29BFE)',
+                            background: 'linear-gradient(135deg, var(--primary), #42A5F5)',
                             borderRadius: '50%',
                             margin: '0 auto 32px',
-                            boxShadow: '0 20px 60px rgba(108, 92, 231, 0.4)',
+                            boxShadow: '0 20px 60px rgba(13, 71, 161, 0.4)',
                             display: 'flex', alignItems: 'center', justifyContent: 'center'
                         }}>
                             <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2">
@@ -174,8 +174,8 @@ const ProblemSolution = () => (
                             <p style={{ margin: 0, fontSize: '0.95rem' }}>Boring, inefficient, and forgettable.</p>
                         </div>
                     </div>
-                    <div className="card" style={{ display: 'flex', alignItems: 'center', gap: '20px', padding: '24px', borderColor: 'var(--primary)', background: 'rgba(108, 92, 231, 0.03)' }}>
-                        <div style={{ background: 'rgba(108, 92, 231, 0.1)', padding: '12px', borderRadius: '50%', fontSize: '1.5rem' }}>✨</div>
+                    <div className="card" style={{ display: 'flex', alignItems: 'center', gap: '20px', padding: '24px', borderColor: 'var(--primary)', background: 'rgba(13, 71, 161, 0.03)' }}>
+                        <div style={{ background: 'rgba(13, 71, 161, 0.1)', padding: '12px', borderRadius: '50%', fontSize: '1.5rem' }}>✨</div>
                         <div>
                             <h4 style={{ margin: 0, color: 'var(--primary)' }}>EnglishMan Immersion</h4>
                             <p style={{ margin: 0, fontSize: '0.95rem' }}>Active speaking from Day 1.</p>
@@ -259,7 +259,7 @@ const HowItWorks = () => (
 );
 
 const UseCases = () => (
-    <section className="section" style={{ background: 'linear-gradient(180deg, var(--bg-main) 0%, rgba(108, 92, 231, 0.05) 100%)' }}>
+    <section className="section" style={{ background: 'linear-gradient(180deg, var(--bg-main) 0%, rgba(13, 71, 161, 0.05) 100%)' }}>
         <div className="container">
             <div className="card" style={{ padding: '80px', textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
                 <div style={{ position: 'relative', zIndex: 1 }}>
