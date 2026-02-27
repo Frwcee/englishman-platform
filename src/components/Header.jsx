@@ -1,6 +1,6 @@
 import Logo from './Logo';
 
-const Header = ({ onStart }) => {
+const Header = ({ onStart, onHome }) => {
     return (
         <header style={{
             background: 'rgba(255, 255, 255, 0.95)',
@@ -17,20 +17,20 @@ const Header = ({ onStart }) => {
                 justifyContent: 'space-between'
             }}>
                 {/* Logo */}
-                <div onClick={() => window.scrollTo(0, 0)} style={{ cursor: 'pointer' }}>
+                <div onClick={onHome} style={{ cursor: 'pointer' }}>
                     <Logo />
                 </div>
 
                 {/* Desktop Nav */}
                 <nav style={{ display: 'flex', gap: '32px', alignItems: 'center' }} className="desktop-nav">
-                    <a href="#" style={{ fontWeight: '500', color: 'var(--text-dark)' }}>Home</a>
-                    <a href="#courses" style={{ fontWeight: '500', color: 'var(--text-muted)' }}>Courses</a>
+                    <a href="#" onClick={(e) => { e.preventDefault(); onHome && onHome(); }} style={{ fontWeight: '500', color: 'var(--text-dark)' }}>Home</a>
+                    <a href="#features" style={{ fontWeight: '500', color: 'var(--text-muted)' }}>Features</a>
                     <a href="#about" style={{ fontWeight: '500', color: 'var(--text-muted)' }}>About</a>
                     <a href="https://t.me/englishmanadmin" target="_blank" style={{ fontWeight: '500', color: 'var(--text-muted)' }}>Contact</a>
                 </nav>
 
                 {/* CTA */}
-                <button className="btn-primary" onClick={onStart}>
+                <button className="btn btn-primary" onClick={onStart}>
                     Start Speaking
                 </button>
             </div>

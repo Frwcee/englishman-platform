@@ -30,9 +30,9 @@ const Footer = () => {
                     <div>
                         <h4 style={{ fontSize: '1.1rem', marginBottom: '16px' }}>Platform</h4>
                         <ul style={{ display: 'flex', flexDirection: 'column', gap: '12px', color: 'var(--text-muted)' }}>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#courses">Courses</a></li>
-                            <li><a href="#">Placement Test</a></li>
+                            <li><a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo(0, 0); }}>Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#pricing">Pricing</a></li>
                         </ul>
                     </div>
 

@@ -38,12 +38,17 @@ function App() {
         window.scrollTo(0, 0);
     };
 
+    const handleHome = () => {
+        setStep('landing');
+        window.scrollTo(0, 0);
+    };
+
     return (
         <div style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
             {/* Header always visible unless in Test mode to avoid distraction? 
                 Actually, keeping it is standard for trust, maybe hide on test for focus.
             */}
-            {step !== 'test' && step !== 'landing' && <Header onStart={handleStart} />}
+            {step !== 'test' && step !== 'landing' && <Header onStart={handleStart} onHome={handleHome} />}
 
             <main style={{ flex: 1 }}>
                 {step !== 'landing' && <FloatingAssistant step={step} />}

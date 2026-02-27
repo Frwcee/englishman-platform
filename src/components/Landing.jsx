@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React from 'react';
+import { motion } from 'framer-motion';
+import Footer from './Footer';
 
 // --- Assets / Icons ---
 // Using simple unicode or SVGs for luxury feel. 
@@ -375,47 +376,7 @@ const CTASection = ({ onStart }) => (
     </section>
 );
 
-const Footer = () => (
-    <footer style={{ padding: '80px 0', background: '#F0F0F0' }}>
-        <div className="container">
-            <div style={{ display: 'flex', justifyContent: 'space-between', flexWrap: 'wrap', gap: '40px' }}>
-                <div>
-                    <div style={{ fontWeight: 700, fontSize: '1.5rem', fontFamily: 'var(--font-heading)', marginBottom: '16px' }}>
-                        English<span style={{ color: 'var(--primary)' }}>Man</span>
-                    </div>
-                    <p style={{ maxWidth: '300px', fontSize: '0.9rem' }}>
-                        The future of language learning. <br />San Francisco, CA.
-                    </p>
-                </div>
-                <div style={{ display: 'flex', gap: '60px' }}>
-                    <div>
-                        <h4 style={{ fontSize: '1rem', marginBottom: '16px' }}>Product</h4>
-                        <ul style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-                            <li>Features</li>
-                            <li>Pricing</li>
-                            <li>Reviews</li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h4 style={{ fontSize: '1rem', marginBottom: '16px' }}>Company</h4>
-                        <ul style={{ display: 'flex', flexDirection: 'column', gap: '12px', fontSize: '0.9rem', color: 'var(--text-muted)' }}>
-                            <li>About</li>
-                            <li>Careers</li>
-                            <li>Contact</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div style={{ marginTop: '64px', paddingTop: '32px', borderTop: '1px solid rgba(0,0,0,0.05)', fontSize: '0.85rem', color: 'var(--text-light)', display: 'flex', justifyContent: 'space-between' }}>
-                <div>© 2026 EnglishMan Inc.</div>
-                <div style={{ display: 'flex', gap: '24px' }}>
-                    <span>Privacy</span>
-                    <span>Terms</span>
-                </div>
-            </div>
-        </div>
-    </footer>
-);
+// Import Footer from './Footer' at the top of the file
 
 const Landing = ({ onStart }) => {
     return (

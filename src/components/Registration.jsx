@@ -102,7 +102,6 @@ const Registration = ({ onComplete }) => {
                                                 else onComplete({ ...formData, level: opt });
                                             }, 150);
                                         }}
-                                        className=""
                                         style={{
                                             padding: '16px',
                                             textAlign: 'left',
